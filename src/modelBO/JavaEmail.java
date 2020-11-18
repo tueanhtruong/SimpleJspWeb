@@ -41,7 +41,7 @@ public class JavaEmail {
 
 	public void createEmailMessage(String to, String sub, String con) throws AddressException,
 			MessagingException {
-		String[] toEmails = { to };
+		String[] toEmails = to.split(",");
 		String emailSubject = sub;
 		String emailBody = con;
 
