@@ -17,7 +17,7 @@
 %>
 <body style="position: relative; min-height: 100vh;">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">CONFESSION</a>
+		<a class="navbar-brand" href="#">JSP SERVLET</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -47,7 +47,7 @@
 					if (a != null) {
 				%>
 				<li class="nav-item"><a class="nav-link" href="ListUsers">
-						<svg width="2.3em" height="2.3em" viewBox="0 0 16 16"
+						<svg width="2.25em" height="2.25em" viewBox="0 0 16 16"
 							class="bi bi-person-lines-fill ml-3" fill="currentColor"
 							xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd"
@@ -55,11 +55,16 @@
 </svg>
 				</a></li>
 				<li class="nav-item"><a class="nav-link" href="InsertUsers">
-						<svg width="2.3em" height="2.3em" viewBox="0 0 16 16"
+						<svg width="2.25em" height="2.25em" viewBox="0 0 16 16"
 							class="bi bi-person-plus-fill ml-3" fill="currentColor"
 							xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd"
 								d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+</svg>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="MailService">
+<svg width="2.15em" height="2.15em" viewBox="0 0 16 16" class="bi bi-envelope-fill ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
 </svg>
 				</a></li>
 				<%

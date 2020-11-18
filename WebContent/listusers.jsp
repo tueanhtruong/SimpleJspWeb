@@ -38,7 +38,7 @@
 		<%
 			}
 		%>
-		<td><a class="btn btn-success" href="UpdateUsers?id=<%=nn[0]%>"> <svg width="2em"
+		<td class = "text-center"><a class="btn btn-success" href="UpdateUsers?id=<%=nn[0]%>"> <svg width="2em"
 					height="2em" viewBox="0 0 16 16" class="bi bi-pencil-square"
 					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path
@@ -47,7 +47,7 @@
 						d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
 </svg>
 		</a></td>
-		<td><a class="btn btn-danger" href="DelUsers?id=<%=nn[0]%>"> <svg width="2em"
+		<td class = "text-center"><a class="btn btn-danger" href="DelUsers?id=<%=nn[0]%>"> <svg width="2em"
 					height="2em" viewBox="0 0 16 16" class="bi bi-person-x-fill"
 					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd"

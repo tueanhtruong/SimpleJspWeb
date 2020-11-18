@@ -3,7 +3,6 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/XXX.css" />
 
 <t:wrapper>
     <h1 class = "container">Information account ...</h1>
