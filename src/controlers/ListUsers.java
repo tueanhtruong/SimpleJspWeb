@@ -37,13 +37,9 @@ public class ListUsers extends HttpServlet {
 		//System.out.println(a);
 		if(a!=null) {
 			ArrayList<String> data = ListusersBO.getData(); 
-			String[] users = new String[data.size()];
-			for(int i=0;i<data.size();i++) {
-				users[i] = new String(data.get(i)); 
-			}
-			dataQ d = new dataQ();
-			d.data = (ArrayList<String>) data.clone();
-			request.setAttribute("dataUsers", d);
+//			dataQ d = new dataQ();
+//			d.data = (ArrayList<String>) data.clone();
+			dataQ.data = data;
 			response.sendRedirect("listusers.jsp");
 		}
 		else {
@@ -57,7 +53,12 @@ public class ListUsers extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String s = request.getParameter("search");
+		String op = request.getParameter("option");
+		ArrayList<String> data = ListusersBO.searchData(s.toLowerCase(),op); 
+		//dataQ.data = (ArrayList<String>) data.clone();
+		dataQ.data = data;
+		response.sendRedirect("listusers.jsp");
 	}
 
 }

@@ -80,8 +80,13 @@
 			<h5>LOG OUT</h5>
 		</a>
 		<%
-			}
+			}else{
 		%>
+		<a href="LoginServerlet">
+			<h5>LOG IN</h5>
+		</a>
+		<%
+			}%>
 	</nav>
 	<jsp:doBody />
 </body>

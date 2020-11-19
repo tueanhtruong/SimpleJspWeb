@@ -4,16 +4,48 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/XXX.css" />
 
 <t:wrapper>
 	<h1 class="container">Welcome</h1>
 </t:wrapper>
 <%
-	dataQ a = (dataQ) request.getAttribute("dataUsers");
-//System.out.println(request.getAttribute("dataUsers"));
+	dataQ a = new dataQ();
 %>
-<table class="container table table-striped table-bordered table-hover">
+<div class = "container">
+
+<div class="row">
+<div class="col-sm-5"></div>
+<div class="col-sm-7">
+
+<form action="ListUsers" method="post">
+<div class = "form-group row">
+<div class="col-sm-6 mr-1">
+<div class="row">
+<input type = "text" class = "form-control" name="search" placeholder="Search for Users">
+</div>
+</div>
+<div class="col-sm-3 mr-1">
+<div class="row">
+<select class="form-control" name="option">
+        <option value="1" selected>USER NAME</option>
+        <option value="2">INFO</option>
+      </select>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="row">
+<input type = "submit" class = "btn btn-primary" value="SEARCH">
+</div>
+</div>
+      
+ 
+</div>
+<small id="Help" class="form-text text-muted">Choose attribute you want to search</small>
+</form>
+
+</div>
+</div>
+<table class="table table-striped table-bordered table-hover">
 	<tr>
 		<%
 			String[] nn = a.data.get(0).split("  ");
@@ -59,4 +91,5 @@
 		}
 	%>
 </table>
+</div>
 
